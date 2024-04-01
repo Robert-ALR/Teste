@@ -1,0 +1,21 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main  # ajuste para a branch principal do seu repositório
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Adicione aqui os passos necessários para construir o seu aplicativo
+
+      - name: Deploy to Production
+        run: |
+          echo "Deploying to production..."
+          # Adicione aqui os comandos necessários para fazer o deploy do seu aplicativo
